@@ -19,7 +19,7 @@ function recuperaConteudoAjax() {
             //  = this.responseText;
 
             let saida = ""
-            data.array.forEach(function(aluno) {
+            data.forEach(function(aluno) {
                 saida += aluno.idade >= 18 ?
                     `${aluno.nome} é maior de idade <br> ` :
                     `${aluno.nome} é menor de idade <br> `
